@@ -1,0 +1,39 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+  .gutter {
+    background-color: #eee;
+  
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d2ccca;
+  }
+  
+  .gutter.gutter-horizontal {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+    cursor: col-resize;
+  }
+  
+  .gutter.gutter-vertical {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+    cursor: row-resize;
+  }
+  
+  .split {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 100px; 
+}

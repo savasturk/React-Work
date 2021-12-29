@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const element = <h1>Hello World</h1>;
+import './styles/style.css';
+import App from './App';
 
-ReactDOM.render(element, document.getElementById('root'));
+
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+    <App />
+  ,
+  rootElement
+);
