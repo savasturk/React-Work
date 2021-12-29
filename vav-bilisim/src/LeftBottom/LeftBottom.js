@@ -56,6 +56,12 @@ const LeftBottom = (props) => {
       phoneNumber: addFormData.phoneNumber,
       email: addFormData.email,
     };
+    let a = JSON.stringify(newContact);
+
+    /*const fs = require('fs');
+    fs.writeFileSync("./mock-data.json", a);*/
+
+    console.log(newContact);
 
     const newContacts = [...contacts, newContact];
     setContacts(newContacts);
