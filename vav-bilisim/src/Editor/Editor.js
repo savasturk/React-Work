@@ -4,6 +4,8 @@ import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import RightBottom from '../RightBottom/RightBottom';
 import { TableLayout } from '../TableLayout/TableLayout';
+import LeftBottom from '../LeftBottom';
+import ReactTable from '../ReactTable/ReactTable';
 
 
 
@@ -88,10 +90,14 @@ export const Editor = (props) =>{
         
         <div className={classes.mainArea}>
        <TableLayout>
-		   
+
 	   </TableLayout>
         </div>
-        <div className={classes.bottomArea} />
+        <div className={classes.bottomArea} >
+		<LeftBottom>
+			</LeftBottom>
+			</div>
+		
       </Split>
       <Split
         sizes={max ? [100, 0] : [80, 20]}
@@ -101,7 +107,11 @@ export const Editor = (props) =>{
         className={classes.wrapper}
       >
         
-        <div className={classes.mainAreaRight} />
+        <div className={classes.mainAreaRight} >
+		<ReactTable>
+			
+		</ReactTable>
+		</div>
         <div className={classes.bottomAreaRight}>
 			<RightBottom>
 
