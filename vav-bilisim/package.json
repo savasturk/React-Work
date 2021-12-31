@@ -10,17 +10,37 @@
     "@material-ui/styles": "^4.11.4",
     "@mui/material": "^5.2.6",
     "@mui/styled-engine": "^5.2.6",
+    "@reduxjs/toolkit": "^1.7.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.1",
+    "browserify-fs": "^1.0.0",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
     "crypto-browserify": "^3.12.0",
     "crypto-js": "^4.1.1",
+    "electron-json-storage": "^4.5.0",
+    "electron-store": "^8.0.1",
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "match-sorter": "^6.3.1",
     "namor": "^2.0.3",
+    "path": "^0.12.7",
+    "path-browserify": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
+    "react-redux": "^7.2.6",
+    "react-scripts": "^5.0.0",
     "react-split": "^2.0.13",
     "react-table": "^7.7.0",
+    "redux": "^4.1.2",
+    "state-pool": "^0.6.0",
+    "stream": "^0.0.2",
+    "stream-browserify": "^3.0.0",
+    "styled-components": "^5.3.3",
+    "util": "^0.12.4",
     "web-vitals": "^2.1.2",
     "write-json-file": "^5.0.0"
   },
@@ -47,5 +67,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "morgan": "^1.10.0",
+    "process": "^0.11.10",
+    "rollup-plugin-replace": "^2.2.0"
+  },
+  "browser": {
+    "fs": false
   }
 }

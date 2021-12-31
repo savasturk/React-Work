@@ -6,6 +6,13 @@ import RightBottom from '../RightBottom/RightBottom';
 import { TableLayout } from '../TableLayout/TableLayout';
 import LeftBottom from '../LeftBottom';
 import ReactTable from '../ReactTable/ReactTable';
+import ColumnFilter from '../ColumnFilter/ColumnFilter';
+import { Provider } from 'react-redux'
+
+import store from '../LeftBottom/store'
+
+import { createStore } from "redux";
+
 
 
 
@@ -89,13 +96,17 @@ export const Editor = (props) =>{
       >
         
         <div className={classes.mainArea}>
-       <TableLayout>
-
-	   </TableLayout>
+        <Provider store = {store}>
+          <ColumnFilter>
+    </ColumnFilter>
+    </Provider>
         </div>
         <div className={classes.bottomArea} >
-		<LeftBottom>
-			</LeftBottom>
+          <Provider store = {store}>
+          <LeftBottom>
+			    </LeftBottom>
+          </Provider>
+	
 			</div>
 		
       </Split>
@@ -108,9 +119,7 @@ export const Editor = (props) =>{
       >
         
         <div className={classes.mainAreaRight} >
-		<ReactTable>
-			
-		</ReactTable>
+		
 		</div>
         <div className={classes.bottomAreaRight}>
 			<RightBottom>
